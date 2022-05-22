@@ -1,0 +1,217 @@
+/*
+ * Page
+ * ====
+ */
+.page {
+    width: 100%;
+}
+
+
+/*
+ * Header
+ * ====
+ */
+.header {
+    /*padding: 10px;*/
+    text-align: center;
+    background: #496a77;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px; /* Leave horizontal gap between header and page content. */
+}
+
+/*
+ * Menu
+ * ====
+ */
+
+.menu { /* Create a class for menus */
+    text-align: center;
+    background: rgb(110, 11, 11);
+    color: rgb(122, 23, 23);
+}
+
+.menu ul { /* Style all ul elements in "menu" class */
+    list-style-type: none; /* Remove the bullet points */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+    display: inline;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #1a8ebc;
+}
+
+
+/*
+ * Footer
+ * ====
+ */
+.footer {
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 60%;
+}
+
+/*
+   Product Catalogue Rulesets
+   ===
+*/
+.section {
+    display: flex;
+    background-color: lightgray;
+}
+
+.product {
+    display: flex;
+    background-color: white;
+    border: 1px solid #BDBDBC; /* A gray darker than "light gray" */
+    margin: 20px;
+    padding: 10px;
+    flex: 1;
+}
+
+.product_image {
+    width: 250px;
+    height: 300px;
+}
+
+.product_image_thumbnail {
+    width: 100px;
+    height: 110px;
+}
+
+/*
+   Cart Table Rulesets
+   ===
+*/
+.simpleCart_items table {
+    /*
+      Need to set border-collapse for tr border (refer to ".simpleCart_items tr" ruleset) to appear.
+    */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .simpleCart_items th {
+      font-size: 125%; /* Use bigger font for table heading. */
+  }
+  
+  .simpleCart_items tr {
+      border-bottom: 1px solid lightgray;
+  }
+  
+  .simpleCart_items td {
+      padding: 10px;
+  }
+
+  /* 
+   "Totals Table" Rulesets
+   ===
+*/
+table.costs {
+    border: 1px solid lightgray;
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
+    padding: 10px;
+    font-size: 110%;
+}
+
+td.costs{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+/*
+   Links Rulesets
+   ===
+*/
+.button, a.simpleCart_increment, a.simpleCart_decrement, a.simpleCart_remove, a.item_add {
+    background-color:rgb(122, 62, 62);
+    border:1px solid rgb(170, 137, 137);
+    border-radius:5px;
+    color:black;
+    margin-right:10px;
+    padding:10px 10px 10px 10px;
+    text-decoration-line: none;
+}
+
+.item_price {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+a.simpleCart_empty {
+    color: lightslategray;
+    font-size: 80%;
+    padding:10px 10px 10px 10px;
+}
+
+/*
+   "Invalid" CSS-pseudo class.
+ */
+ input:invalid {
+    border: 1px dashed red;
+}
+
+/*
+   "Valid" CSS-pseudo class.
+ */
+input:valid {
+    border: 1px solid black;
+}
+
+/* Columns */
+.left-column img{
+    position: relative;
+    
+    width:500px;
+    height:auto;
+  }
+
+.right-column {
+  position:relative;
+  left:550px;
+  top:-400px;
+}
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
